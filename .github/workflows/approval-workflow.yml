@@ -3,3 +3,8 @@ name: Team's awesome approval workflow
 # Runs whenever a pull request reviews has been submitted, edited or dismissed
 # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#pull_request_review
 on: pull_request_review
+
+jobs:
+  labelWhenApproved
+    runs-on: ubuntu-latest
+    name: Label when approved
